@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import styles from "./page.module.css";
+import 'katex/dist/katex.min.css';
+import 'prismjs/themes/prism-tomorrow.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

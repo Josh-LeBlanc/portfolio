@@ -215,6 +215,33 @@ a.secondary {
   flex-direction: column;
 }
 
+.readmeBoxContent :global(pre) {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.readmeBoxContent :global(code) {
+  font-family: var(--font-mono);
+}
+
+.readmeBoxContent :global(h1),
+.readmeBoxContent :global(h2),
+.readmeBoxContent :global(h3),
+.readmeBoxContent :global(h4) {
+  margin: 1rem 0;
+}
+
+.readmeBoxContent :global(p) {
+  margin: 0.5rem 0;
+}
+
+.readmeBoxContent :global(a) {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 .navLink {
   color: var(--green);
   font-family: "Iosevka Nerd Font";
