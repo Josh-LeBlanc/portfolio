@@ -12,6 +12,7 @@
     "@webtui/css": "^0.0.5",
     "@webtui/plugin-nf": "^0.1.1",
     "@webtui/theme-catppuccin": "^0.0.3",
+    "@webtui/theme-gruvbox": "^0.0.1",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

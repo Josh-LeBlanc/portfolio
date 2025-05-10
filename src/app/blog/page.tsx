@@ -1,3 +1,5 @@
+import styles from "../page.module.css";
+
 export default function Blog() {
   const posts = [
     {
@@ -22,17 +24,19 @@ export default function Blog() {
 
   return (
     <div>
-      <h1>Blog Posts</h1>
-      <div style={{ marginTop: "2rem" }}>
+      <h1 className={styles.pageHeading}>blog posts</h1>
+      <div>
         {posts.map((post, index) => (
-          <div key={index} box-="square" style={{ marginBottom: "1rem" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <h2>{post.title}</h2>
-              <span is-="badge" variant-="lavender">{post.tag}</span>
+          <div key={index} box-="round" className={styles.readmeBox} style={{ marginBottom: "1rem" }}>
+            <div className={styles.readmeBoxHeader}>
+              <span is-="badge" variant-="background0" style={{ color: "var(--yellow)" }}>{post.title}</span>
+              <span is-="badge" variant-="background0">{post.tag}</span>
             </div>
-            <p style={{ color: "var(--subtext1)", marginTop: "0.5rem" }}>{post.date}</p>
-            <p style={{ marginTop: "1rem" }}>{post.excerpt}</p>
-            <button variant-="blue" style={{ marginTop: "1rem" }}>Read More</button>
+            <div className={styles.readmeBoxContent}>
+              <p style={{ color: "var(--subtext0)", marginTop: "0.5rem" }}>{post.date}</p>
+              <p style={{ marginTop: "1rem", color: "var(--text)" }}>{post.excerpt}</p>
+              <button box-="round" variant-="blue" style={{ marginTop: "1rem" }}>Read More</button>
+            </div>
           </div>
         ))}
       </div>

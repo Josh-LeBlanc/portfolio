@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "joshle.dev",
-  description: "Personal website of joshle",
+  description: "josh's portfolio",
 };
 
 export default function RootLayout({
@@ -18,16 +18,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-webtui-theme="catppuccin-mocha">
+    {/* <html lang="en" data-webtui-theme="gruvbox-dark"> */}
       <body className={inter.className}>
         <div style={{ padding: "1rem" }}>
-          <div box-="square" className={styles.navBox}>
-            <nav style={{ display: "flex", gap: "1rem" }}>
-              <Link href="/" className={styles.navLink}>Home</Link>
-              <Link href="/blog" className={styles.navLink}>Blog</Link>
-              <Link href="/projects" className={styles.navLink}>Projects</Link>
+          <div box-="round" className={styles.navBox}>
+            <nav className={styles.navContainer}>
+              <div className={styles.leftLinks}>
+                <Link href="/" className={styles.navLink}>Home</Link>
+                <Link href="/blog" className={styles.navLink}>Blog</Link>
+                <Link href="/projects" className={styles.navLink}>Projects</Link>
+              </div>
+              <div className={styles.rightLinks}>
+                <Link href="https://github.com/josh-leblanc" className={styles.navLink} style={{ marginLeft: "1rem" }}>GitHub</Link>
+                <Link href="https://www.linkedin.com/in/josh-p-leblanc" className={styles.navLink} style={{ marginLeft: "1rem" }}>LinkedIn</Link>
+              </div>
             </nav>
           </div>
-          <main style={{ marginTop: "2rem" }}>
+          <main style={{ paddingTop: "1rem" }}>
             {children}
           </main>
         </div>

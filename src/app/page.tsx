@@ -3,19 +3,17 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to My Portfolio</h1>
-      <div box-="square">
-        <div className={styles.secondBoxHeader}>
-          <span is-="badge" variant-="background0">top-left</span>
-          <span is-="badge" variant-="background0">top-right</span>
+      <h1 className={styles.pageHeading}>hi, my name is josh</h1>
+      <div box-="round" className={styles.readmeBox}>
+        <div className={styles.readmeBoxHeader}>
+          <span is-="badge" variant-="background0" style={{ color: "var(--yellow)" }}>README.md</span>
+          {/* <span is-="badge" variant-="background0">top-right</span> */}
         </div>
-        <div className={styles.secondBoxContent}>
-          <p>Hi! I'm a developer passionate about creating beautiful and functional web applications.
-          This portfolio is built using WebTUI, a framework that makes web applications look like
-          terminal user interfaces.  </p>
+        <div className={styles.readmeBoxContent}>
+          <p style={{ color: "var(--text)" }}>compeng undergrad interested in swe, embedded systems, ml, devops, hacking and computers in general</p>
         </div>
       </div>
-      <div box-="square contain:none">
+      {/* <div box-="round contain:none">
         <div className={styles.firstBoxHeader}>
           <span is-="badge" variant-="background0">top-left</span>
           <span is-="badge" variant-="background0">top-right</span>
@@ -31,7 +29,7 @@ export default function Home() {
           <span is-="badge" variant-="background0">bottom-left</span>
           <span is-="badge" variant-="background0">bottom-right</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 } 

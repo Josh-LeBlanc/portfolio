@@ -193,29 +193,64 @@ a.secondary {
   padding: 0.5rem 1rem;
 }
 
-.secondBoxHeader {
+.readmeBox {
+  --box-border-color: var(--surface0);
+}
+
+.readmeBoxHeader {
+  color: var(--yellow);
   display: flex;
   justify-content: space-between;
   font-family: "Iosevka Nerd Font";
   background-color: background0;
   padding-inline: 1rem;
+  font-size: 1.2rem;
 }
 
-.secondBoxContent {
+.readmeBoxContent {
   padding-bottom: 1lh;
-  padding-left: 1ch;
-  padding-right: 1ch;
+  padding-left: 2ch;
+  padding-right: 2ch;
   display: flex;
   flex-direction: column;
 }
 
 .navLink {
-  color: var(--blue);
+  color: var(--green);
   font-family: "Iosevka Nerd Font";
+  /* text-decoration: underline; */
 }
 
 .navBox {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1lh 2ch;
+  --box-border-color: var(--surface0);
+}
+
+.pageHeading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: .5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.leftLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.rightLinks {
+  margin-left: auto;
+  display: flex;
+}
+
+.projectTechLabel {
+  color: var(--mantle);
 }

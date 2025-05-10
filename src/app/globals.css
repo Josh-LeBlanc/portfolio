@@ -12,6 +12,7 @@
 
 /* Theme */
 @import "@webtui/theme-catppuccin";
+@import "@webtui/theme-gruvbox";
 @import "@webtui/plugin-nf";
 
 :root {

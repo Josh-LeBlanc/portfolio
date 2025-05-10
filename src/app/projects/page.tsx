@@ -1,3 +1,5 @@
+import styles from "../page.module.css";
+
 export default function Projects() {
   const projects = [
     {
@@ -22,23 +24,23 @@ export default function Projects() {
 
   return (
     <div>
-      <h1>Projects</h1>
-      <div style={{ marginTop: "2rem" }}>
+      <h1 className={styles.pageHeading}>projects</h1>
+      <div>
         {projects.map((project, index) => (
-          <div key={index} box-="square" style={{ marginBottom: "1rem" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <h2>{project.title}</h2>
-              <span is-="badge" variant-="green">{project.status}</span>
+          <div key={index} box-="round" className={styles.readmeBox} style={{ paddingBottom: "1rem" }}>
+            <div className={styles.readmeBoxHeader}>
+              <span is-="badge" variant-="background0" style={{ color: "var(--yellow)" }}>{project.title}</span>
+              <span is-="badge" variant-="background0" style={{ color: "var(--mauve)" }}>{project.status}</span>
             </div>
-            <p style={{ marginTop: "1rem" }}>{project.description}</p>
-            <div style={{ marginTop: "1rem", display: "flex", gap: "0.5rem" }}>
+            <div style={{ display: "flex", gap: "0.5rem", marginLeft: "1.5rem", fontFamily: "Iosevka Nerd Font", marginTop: ".5lh" }}>
               {project.tech.map((tech, techIndex) => (
-                <span key={techIndex} is-="badge" variant-="mauve">{tech}</span>
+                <span key={techIndex} is-="badge" variant-="flamingo" className={styles.projectTechLabel}>{tech}</span>
               ))}
             </div>
-            <div style={{ marginTop: "1rem", display: "flex", gap: "0.5rem" }}>
-              <button variant-="blue">View Project</button>
-              <button variant-="sapphire">Source Code</button>
+            <p className={styles.readmeBoxContent} style={{ color: "var(--text)", paddingTop: "1rem", paddingLeft: "1.5rem", paddingBottom: ".5lh" }}>{project.description}</p>
+            <div style={{ display: "flex", gap: "0.5rem", marginLeft: "1rem", }}>
+              <button box-="round" variant-="blue" className={styles.firstBoxButtons}>View Project</button>
+              <button box-="round" variant-="sapphire" className={styles.firstBoxButtons}>Source Code</button>
             </div>
           </div>
         ))}
