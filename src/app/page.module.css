@@ -248,6 +248,10 @@ a.secondary {
   /* text-decoration: underline; */
 }
 
+.navLink:hover {
+  text-decoration: underline;
+}
+
 .navBox {
   display: flex;
   justify-content: space-between;
