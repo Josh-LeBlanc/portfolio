@@ -27,8 +27,8 @@ export default function RootLayout({
             <nav className={styles.navContainer}>
               <div className={styles.leftLinks}>
                 <Link href="/" className={styles.navLink}>Home</Link>
-                <Link href="/blog" className={styles.navLink}>Blog</Link>
                 <Link href="/projects" className={styles.navLink}>Projects</Link>
+                <Link href="/blog" className={styles.navLink}>Blog</Link>
               </div>
               <div className={styles.rightLinks}>
                 <Link href="https://github.com/josh-leblanc" className={styles.navLink} style={{ marginLeft: "1rem" }}>GitHub</Link>
