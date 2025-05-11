@@ -20,8 +20,8 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
       <h1 className={styles.pageHeading}>{post.title}</h1>
       <div box-="round" className={styles.readmeBox}>
         <div className={styles.readmeBoxHeader}>
-          <span is-="badge" variant-="background0" style={{ color: "var(--yellow)" }}>{post.date}</span>
-          <span is-="badge" variant-="background0">{post.tag}</span>
+          <span is-="badge" variant-="background0" style={{ color: "var(--yellow)", marginBottom: ".5rem" }}>{post.date}</span>
+          <span is-="badge" variant-="background0" style={{ marginBottom: ".5rem" }}>{post.tag}</span>
         </div>
         <div className={styles.readmeBoxContent}>
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
