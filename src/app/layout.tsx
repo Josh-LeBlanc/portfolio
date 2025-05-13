@@ -11,6 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "joshle.dev",
   description: "josh's portfolio",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png'
+  }
 };
 
 export default function RootLayout({
@@ -21,6 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-webtui-theme="catppuccin-mocha">
     {/* <html lang="en" data-webtui-theme="gruvbox-dark"> */}
+      <head>
+        <link rel="icon" href="/public/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <div style={{ padding: "1rem" }}>
           <div box-="round" className={styles.navBox}>
