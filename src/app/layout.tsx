@@ -31,7 +31,7 @@ export default function RootLayout({
                 <Link href="/blog" className={styles.navLink}>Blog</Link>
               </div>
               <div className={styles.rightLinks}>
-                <Link href="https://github.com/josh-leblanc" className={styles.navLink} style={{ marginLeft: "1rem" }}>GitHub</Link>
+                <Link href="https://github.com/josh-le" className={styles.navLink} style={{ marginLeft: "1rem" }}>GitHub</Link>
                 <Link href="https://www.linkedin.com/in/josh-p-leblanc" className={styles.navLink} style={{ marginLeft: "1rem" }}>LinkedIn</Link>
               </div>
             </nav>
