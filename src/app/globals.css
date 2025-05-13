@@ -1,19 +1,19 @@
 @layer base, utils, components;
 
-@import "@webtui/css/base.css";
+@import "@webtui/css/base.css" layer(base);
 
 /* Utils */
-@import "@webtui/css/utils/box.css";
+@import "@webtui/css/utils/box.css" layer(utils);
 
 /* Components */
-@import "@webtui/css/components/button.css";
-@import "@webtui/css/components/typography.css";
-@import "@webtui/css/components/badge.css";
+@import "@webtui/css/components/button.css" layer(components);
+@import "@webtui/css/components/typography.css" layer(components);
+@import "@webtui/css/components/badge.css" layer(components);
 
 /* Theme */
-@import "@webtui/theme-catppuccin";
-@import "@webtui/theme-gruvbox";
-@import "@webtui/plugin-nf";
+@import "@webtui/theme-catppuccin" layer(components);
+@import "@webtui/theme-gruvbox" layer(components);
+@import "@webtui/plugin-nf" layer(components);
 
 :root {
   --max-width: 1100px;
