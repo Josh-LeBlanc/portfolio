@@ -16,6 +16,7 @@ export default function Blog() {
               <span is-="badge" variant-="background0">{post.tag}</span>
             </div>
             <div className={styles.readmeBoxContent}>
+              <p style={{ color: "var(--subtext0)" }}>{post.date}</p>
               <p>{post.excerpt}</p>
               <div style={{ marginTop: '1rem' }}>
                 <Link href={`/blog/${post.id}`}>
