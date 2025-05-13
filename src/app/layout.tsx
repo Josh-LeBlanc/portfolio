@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" data-webtui-theme="catppuccin-mocha">
     {/* <html lang="en" data-webtui-theme="gruvbox-dark"> */}
       <head>
-        <link rel="icon" href="/public/favicon.ico" sizes="any" />
+        <link rel="icon" href="/src/app/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
         <div style={{ padding: "1rem" }}>
