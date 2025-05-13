@@ -61,6 +61,7 @@ export async function getBlogPost(id: string): Promise<BlogPost> {
 export interface Project {
   id: string;
   title: string;
+  date: string;
   description: string;
   tech: string[];
   status: string;
@@ -85,5 +86,5 @@ export function getAllProjects() {
     };
   });
 
-  return allProjects;
+  return allProjects.sort((a, b) => (a.date < b.date ? 1 : -1));
 } 
