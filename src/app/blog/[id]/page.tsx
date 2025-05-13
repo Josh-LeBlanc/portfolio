@@ -12,8 +12,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }: { params: { id: string } }) {
-  const post = await getBlogPost(params.id);
+type Params = Promise<{ id: string }>;
+
+export default async function BlogPost({ params }: { params: Params }) {
+  const { id } = await params;
+  const post = await getBlogPost(id);
 
   return (
     <div>

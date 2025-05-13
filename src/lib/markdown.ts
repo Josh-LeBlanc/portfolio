@@ -79,7 +79,6 @@ export function getAllProjects() {
     const matterResult = matter(fileContents);
 
     return {
-      id,
       ...(matterResult.data as Project),
       tech: (matterResult.data.tech as string).split(',').map(t => t.trim())
     };

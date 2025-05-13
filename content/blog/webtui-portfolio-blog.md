@@ -17,4 +17,4 @@ The trick that made Cursor able to do this was telling it from the get go that I
 ## where i'm at now
 Working on getting the projects page to be easily maintainable like the blogs are currently.
 
-All in all there were some frustrating moments, mainly driven by the fact that I don't really understand the code cursor is writing, but I was able to get a product with much more functionality than I would have been able to create by hand.
+All in all there were some frustrating moments, mainly driven by the fact that I don't really understand the code cursor is writing, but I was able to get a product with much more functionality than I would have been able to create by hand, and I was able to fix a lot of things by just spending a little time understanding the code.
