@@ -1,12 +1,32 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 import Link from "next/link";
 import styles from "./page.module.css";
 import 'katex/dist/katex.min.css';
 import 'prismjs/themes/prism-tomorrow.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const iosevka = localFont({
+  src: [
+    {
+      path: '../fonts/IosevkaNerdFont-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-iosevka'
+});
+
+const hack = localFont({
+  src: [
+    {
+      path: '../fonts/HackNerdFont-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-hack'
+});
 
 export const metadata: Metadata = {
   title: "joshle.dev",
@@ -23,12 +43,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-webtui-theme="catppuccin-mocha">
+    <html lang="en" data-webtui-theme="catppuccin-mocha" className={`${iosevka.variable} ${hack.variable}`}>
     {/* <html lang="en" data-webtui-theme="gruvbox-dark"> */}
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body>
         <div style={{ padding: "1rem" }}>
           <div box-="round" className={styles.navBox}>
             <nav className={styles.navContainer}>
