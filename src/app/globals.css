@@ -19,10 +19,17 @@
   --max-width: 1100px;
   --border-radius: 12px;
   --font-family: "Iosevka Nerd Font";
-  --font-mono: "Hack Nerd Font";
+  --font-mono: monospace, "Hack Nerd Font";
   /* --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace; */
+}
+
+@layer base {
+  :root {
+    --font-family: "Iosevka Nerd Font";
+    --font-mono: monospace, "Hack Nerd Font";
+  }
 }
 
 * {

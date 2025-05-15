@@ -4,6 +4,9 @@ date: "2025-05-10"
 tag: "project"
 excerpt: "my first blog post. it's about how i vibe coded this website"
 ---
+```javascript
+console.log("Hello, world");
+```
 # beginning
 I got the idea to make this website when cursor gave out free pro for students for a year. I had seen this css library [WebTUI](https://webtui.ironclad.sh/) a little while knew I wanted to make this website, but didn't want to sink in all of the time it would take to make it. Enter: vibe coding.
 # vibe coding
