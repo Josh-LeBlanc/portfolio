@@ -13,7 +13,7 @@
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-family);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,7 +35,7 @@
 }
 
 .main ol {
-  font-family: "Hack Nerd Font";
+  font-family: var(--font-hack);
   padding-left: 0;
   margin: 0;
   font-size: 14px;
@@ -170,7 +170,7 @@ a.secondary {
 .firstBoxHeader {
   display: flex;
   justify-content: space-between;
-  font-family: "Iosevka Nerd Font";
+  font-family: var(--font-iosevka);
   background-color: background0;
   padding-inline: 1rem;
 }
@@ -189,7 +189,7 @@ a.secondary {
 }
 
 .firstBoxButtons {
-  font-family: "Iosevka Nerd Font";
+  font-family: var(--font-iosevka);
   padding: 0.5rem 1rem;
 }
 
@@ -201,7 +201,7 @@ a.secondary {
   color: var(--yellow);
   display: flex;
   justify-content: space-between;
-  font-family: "Iosevka Nerd Font";
+  font-family: var(--font-iosevka);
   background-color: background0;
   padding-inline: 1rem;
   font-size: 1.2rem;
@@ -262,7 +262,7 @@ a.secondary {
 
 .navLink {
   color: var(--green);
-  font-family: "Iosevka Nerd Font";
+  font-family: var(--font-iosevka);
   /* text-decoration: underline; */
 }
 

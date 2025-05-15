@@ -16,7 +16,7 @@ export default function Projects() {
               <span is-="badge" variant-="background0" style={{ color: "var(--mauve)" }}>{project.status}</span>
             </div>
             <p style={{ color: "var(--subtext0)", marginLeft: "1.5rem", marginTop: "0.3rem" }}>{project.date}</p>
-            <div style={{ display: "flex", gap: "0.5rem", marginLeft: "1.5rem", fontFamily: "Iosevka Nerd Font", marginTop: ".5lh" }}>
+            <div style={{ display: "flex", gap: "0.5rem", marginLeft: "1.5rem", fontFamily: "var(--font-iosevka)", marginTop: ".5lh" }}>
               {project.tech.map((tech, techIndex) => (
                 <span key={techIndex} is-="badge" variant-="flamingo" className={styles.projectTechLabel}>{tech}</span>
               ))}
