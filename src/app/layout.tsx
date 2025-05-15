@@ -9,7 +9,7 @@ import 'prismjs/themes/prism-tomorrow.css';
 const iosevka = localFont({
   src: [
     {
-      path: '../fonts/IosevkaNerdFont-Regular.ttf',
+      path: '../fonts/IosevkaNerdFontMono-Regular.ttf',
       weight: '400',
       style: 'normal',
     },
