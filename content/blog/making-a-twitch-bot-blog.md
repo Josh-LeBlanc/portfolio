@@ -2,7 +2,7 @@
 title: "Making a Twitch Bot"
 date: "2025-05-14"
 tag: "project"
-excerpt: "Making a twitch bot is not as easy as I would have expected. I'm detailing the troubles I faced here in case they can help someone else."
+excerpt: "Making a twitch bot is not as easy as I would have expected. This is a quick tutorial that I wish twitch had on their website."
 ---
 I was originally expecting to sit down and have this done in a few dozen lines of python, similar to how it went when I wrote a discord bot. Boy was I wrong. I had a lot of problems, and Twitch's documentation is not very helpful, so I struggled for a little while, and am compiling everything here so you don't have to.
 # step 1: creating the app
